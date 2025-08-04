@@ -38,7 +38,3 @@
 This project is in active development and will be deployed to the web once the core features are complete.
 
 ---
-
-## 📫 Contact
-
-If you're interested in the project, feel free to connect or follow the development:
