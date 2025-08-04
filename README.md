@@ -42,5 +42,3 @@ This project is in active development and will be deployed to the web once the c
 ## 📫 Contact
 
 If you're interested in the project, feel free to connect or follow the development:
-
-- GitHub: [DanielSteele1](https://github.com/aaronharper211)
