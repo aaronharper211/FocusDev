@@ -1,0 +1,1344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+a:hover {
+  color: #17a34a;
+}
+
+a {
+  color: #1DB954;
+}
+
+.App.dark {
+  background-color: #111111;
+  color: white;
+}
+
+#emoji {
+  unicode-bidi: isolate;
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  font-size: 40px;
+  animation: emojifloat 2s ease-in-out infinite;
+  padding: 5px;
+
+}
+
+@keyframes emojifloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+a {
+
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.description {
+
+  color: #c4cad3;
+  display: flex;
+  width: fit-content;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  margin: 10px;
+
+}
+
+.tip-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: #c4cad3;
+  font-size: 13px;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 10px 10px 12px;
+  border-radius: 8px;
+}
+
+ #Input,
+ #Events-Input,
+ #LinkNameInput,
+ #URLInput,
+ .Github-Stats-Input input {
+
+  background-color: #18181b;
+  color: #c4cad3;
+}
+
+.sidebar {
+  color: #c4cad3;
+}
+
+ .Dashboard-Item,
+ .Productivity-Item,
+ .Profile-Item,
+ #github-login {
+  border: 1px solid #292e2e;
+}
+
+.Navigation,
+.Footer {
+
+  color: #c4cad3;
+  background-color: rgba(17, 17, 17, 0.5);
+
+}
+
+.MainWrapper {
+
+  display: flex;
+  min-height: calc(100vh);
+  position: relative;
+  width: 100%;
+}
+
+.themeButton {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #1DB954;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.themeButton:hover {
+  background-color: #1DB954;
+  color: #0f1011;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+#emoji {
+  font-size: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.time {
+
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+
+}
+
+.Navigation {
+  display: flex;
+  position: fixed;
+  top: 1;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  color: #1DB954;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+.Nav-Menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Navigation-Item {
+
+  padding: 10px;
+  width: fit-content;
+  margin: 10px;
+  color: #1DB954;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Navigation-Logo {
+  color: #1DB954;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation-Name {
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #1DB954;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Profile {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Profile-header {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  height: 12rem;
+
+}
+
+.Profile-title {
+
+  font-size: 25px;
+  display: flex;
+  margin: 10px;
+  margin-bottom: 0px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #c4cad3;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.Profile-desc {
+
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #c4cad3;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+.Profile-img img {
+
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #000000;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 10rem;
+  border: 5px solid #1DB954;
+  ;
+}
+
+.Profile-operations {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: flex-start;
+
+}
+
+.Profile-operations span {
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.delete-account, .delete-account-real {
+  display: flex;
+  height: 40px;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: #fd0000;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fd0000;
+}
+
+.delete-account-dialog-buttons {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+
+.delete-account-real {
+
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.Profile-operations button:hover, .delete-account-real:hover {
+  transition: 0.5s ease-in;
+  background-color: #fd0000;
+  color: #000000;
+}
+
+.Profile-operations .AccountsButton {
+  margin: 10px;
+}
+
+.sidebar {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  width: 165px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.sidebar.collapsed .sidebarText {
+
+  opacity: 0;
+  display: none;
+  transition-delay: 0s;
+}
+
+.sidebar-item {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+}
+
+.sidebarText {
+  margin-left: 10px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0.2s ease-in-out;
+  white-space: nowrap;
+  transition-delay: 0.5s;
+}
+
+.sidebar-item:hover {
+  color: #1DB954;
+}
+
+.sidebar-item.active {
+
+  color: #18181b;
+  background-color: #1DB954;
+  border-radius: 14px;
+
+}
+
+#SidebarHome {
+
+  margin-top: 120px;
+
+}
+
+#SidebarHide {
+
+  margin-top: 320px;
+  margin-bottom: 70px;
+
+}
+
+.MainContent {
+
+  display: flex;
+  width: calc(100% - 320px);
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  transition: width 0.3s ease;
+  box-sizing: border-box;
+
+}
+
+.sidebar.collapsed+.MainContent {
+  width: calc(100% - 280px);
+}
+
+.Dashboard-container {
+
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.AccountsButton, .Keep-account {
+  display: flex;
+  height: 40px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  background-color: #1DB954;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.AccountsButton:hover {
+  background-color: #1DB954;
+  color: #0f1011;
+}
+
+.EventDateTime {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 5px;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.section-title {
+  display: flex;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  color: #1DB954;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.calenderButton {
+
+  border: none;
+  border-radius: 15px;
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-style: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px;
+  background-color: #1DB954;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.calenderButton:hover {
+  background-color: #17a34a;
+
+}
+
+.Productivity {
+
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+
+}
+
+.Productivity-Item {
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.section-heading {
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.section-title {
+  font-size: 18px;
+}
+
+.Links-Controls {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.LinksInput,
+.LinksName {
+  display: flex;
+  flex: 1;
+
+}
+
+#youtube .Link,
+#youtube svg {
+
+  color: #df2e2e;
+}
+
+#gmail .Link,
+#gmail svg {
+
+  color: #EA4335;
+}
+
+#figma .Link,
+#figma svg {
+
+  color: #118ee2;
+}
+
+#leetcode .Link,
+#leetcode svg {
+
+  color: #FFA116;
+}
+
+ #github .Link,
+ #github svg {
+
+  color: #ffffff;
+}
+
+
+.Links-Content:hover .Link,
+.Links-Content:hover svg {
+  color: #1DB954 !important;
+}
+
+table {
+
+  width: 100%;
+  table-layout: fixed;
+  padding-left: 10px;
+
+}
+
+
+.Goal-Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+}
+
+.Goal-Text {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+
+}
+
+.goalControls {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Goal-Check {
+
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.delete-goal {
+
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+
+}
+
+.hardcoded-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border-bottom: 1px solid #292e2e;
+  width: 100%;
+  gap: 15px;
+  margin: 5px;
+}
+
+.dynamic-links {
+  display: grid;
+  height: fit-content;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  gap: 15px;
+
+}
+
+.Dashboard-Main {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.code-snippet-dialog, .delete-account-dialog {
+
+  display: flex;
+  height: fit-content;
+  width: 600px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #1DB954;
+  padding: 10px;
+  border: 2px solid #2d2d2d;
+  background-color: #18181b;
+  border-radius: 10px;
+
+}
+
+ .delete-account-dialog  {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+ }
+
+ .delete-account-real{
+  margin: 10px;
+ }
+
+.dialog-input {
+
+  display: flex;
+  height: 40px;
+  width: 70%;
+  font-size: 15px;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #292e2e;
+  color: #1DB954;
+  outline: none;
+  font-family: 'Figtree', sans-serif;
+}
+
+.Dialog-button {
+
+  display: flex;
+  height: auto;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: #1DB954;
+  color: #212520;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.Dialog-button:active {
+
+
+  transform: scale(0.97);
+  background-color: #148c3a;
+
+}
+
+.Dialog-button:hover {
+
+  cursor: pointer;
+}
+
+
+#dialog-text {
+  margin-left: 10px;
+}
+
+.Developer-Item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+#developer-notepad {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+}
+
+.Profile-Item {
+  width: 70%;
+  margin: 10px;
+  border-radius: 15px;
+
+}
+
+.Productivity #Calender {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.Dashboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+.Dashboard-Item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 18px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+
+}
+
+.NoteTaking-Item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  color: #1DB954;
+
+}
+
+#NoteContainer {
+  display: grid;
+  grid-template-columns: 200px;
+}
+
+.ringProgress {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Controls {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.LinksName {
+  width: 100%;
+}
+
+.Item-Icon {
+  display: flex;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 15px;
+  color: rgb(74, 222, 128);
+}
+
+.Item-title {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: fit-content;
+  font-size: 17px;
+  margin-right: 10px;
+
+}
+
+.Item-Icon span {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #c4cad3;
+}
+#ToDo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+#Notes-Buttons {
+
+  display: flex;
+  margin: 10px;
+  background-color: #1DB954;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+#todo-Button {
+
+  align-items: flex-end;
+}
+
+#Notes-Buttons:hover {
+
+  background-color: #17a34a;
+}
+
+.Notes-Buttons:active {
+  transform: scale(0.95);
+  background-color: #148c3a;
+}
+
+#Delete-links-button {
+
+  display: flex;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 15px;
+  color: red;
+}
+
+.Welcome {
+
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  color: #1DB954;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.QOTD {
+  display: flex;
+  max-width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c4cad3;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#QOTD {
+
+  font-style: italic;
+  font-size: 15px;
+  font-family: 'figtree', sans-serif;
+}
+
+
+#Input,
+#URLInput,
+#LinkNameInput,
+#EventsInput,
+#LocationInput,
+#Events-Input,
+#DateInput,
+#TimeInput {
+
+  flex: 1;
+  border: 0px solid;
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid #2d2d2d;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  outline: none;
+
+}
+
+#Input:focus,
+#URLInput:focus,
+#LinkNameInput:focus,
+#EventsInput:focus,
+#LocationInput:focus,
+#GoalInput:focus,
+#Events-Input:focus,
+#DateInput:focus,
+#TimeInput:focus,
+.Github-Stats-Input input:focus {
+
+  box-shadow: inset 0 0 0 2px #1DB954;
+  background-color: #18181b;
+  color: #1DB954;
+  transition: all 0.2s ease-in-out;
+
+}
+
+
+#Input {
+
+  width: 100%;
+  margin: 10px;
+  max-height: fit-content;
+  display: flex;
+  align-items: center;
+
+}
+
+.NoteTaking {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.NoteTaking-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.Notes-Content {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: #25bb59;
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  font-style: bold;
+  font-family: 'Lexend Deca', sans-serif;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.Notes-Content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  clip-path: polygon(10 10, 100% 0, 100% 100%);
+  pointer-events: none;
+}
+
+.Links-Content:hover {
+  cursor: pointer;
+  background-color: #292e2e;
+}
+
+.Links-Content {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  height: 40px;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  font-style: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.Notes-input {
+
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.Note {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  white-space: normal;
+  line-height: 1.30;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.Link {
+
+  max-width: 150px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #c4cad3;
+
+}
+
+.Developer-container {
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Developer {
+
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+
+.Github-Stats-Input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.Github-Stats-Input input {
+
+  flex: 1;
+  border: 0px solid;
+  padding: 10px;
+  height: 45px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  outline: none;
+}
+
+.github-login {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+
+.github-title {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#Github-Commit-Graph {
+  width: fit-content;
+  height: fit-content;
+}
+
+.github-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SubmitGithubName{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1DB954;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
+.SubmitGithubName:hover {
+
+  background-color: #17a34a;
+  cursor: pointer;
+}
+
+#stat {
+
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  color: #1DB954;
+}
+
+#statTitle {
+
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+}
+
+#statNumber {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  color: #c4cad3;
+
+}
+
+#Upcoming-Events,
+#Pinboard {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+#Useful-Links {
+
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
+.Footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Footer-1,
+.Footer-2,
+.Footer-3 {
+  display: flex;
+  flex: 1;
+  font-size: 13px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+
+  display: flex;
+  margin: 10px;
+}
+
+.Droppable {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.DndContext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.Goal-completed {
+
+    text-decoration: line-through;
+}
